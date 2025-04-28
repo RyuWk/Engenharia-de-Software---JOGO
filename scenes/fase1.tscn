@@ -1,11 +1,3 @@
-[gd_scene load_steps=2 format=3 uid="uid://bku3uggp7o2r6"]
-
-[ext_resource type="Texture2D" uid="uid://j0qjvw10v0nt" path="res://assets/backgrounds/menu2.png" id="1_elbe8"]
+[gd_scene format=3 uid="uid://bku3uggp7o2r6"]
 
 [node name="fase1" type="Node2D"]
-
-[node name="TextureRect" type="TextureRect" parent="."]
-texture_filter = 1
-offset_right = 1152.0
-offset_bottom = 648.0
-texture = ExtResource("1_elbe8")
