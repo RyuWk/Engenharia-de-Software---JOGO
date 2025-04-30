@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=3 uid="uid://f6r5sc5tfohv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_at1mi"]
+
+[node name="Fase2Nivel1" type="Node2D"]
+
+[node name="BackgroundLayer" type="CanvasLayer" parent="."]
+
+[node name="background" type="TextureRect" parent="BackgroundLayer"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="InterfaceLayer" type="CanvasLayer" parent="."]
+
+[node name="InterfaceUsuario" type="Node" parent="InterfaceLayer"]
+
+[node name="LixeiraOrganica" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LixeiraOrganica"]
+shape = SubResource("RectangleShape2D_at1mi")
+
+[node name="Sprite2D" type="Sprite2D" parent="LixeiraOrganica"]
+
+[node name="LixeiraPlastico" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LixeiraPlastico"]
+shape = SubResource("RectangleShape2D_at1mi")
+
+[node name="Sprite2D" type="Sprite2D" parent="LixeiraPlastico"]
+
+[node name="Lixo" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Lixo"]
+shape = SubResource("RectangleShape2D_at1mi")
+
+[node name="Sprite2D" type="Sprite2D" parent="Lixo"]
